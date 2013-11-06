@@ -15,6 +15,8 @@ public:
 	int curs_posx;
 	int curs_posy;
 	int curs_posz;
+	AUX_RGBImageRec * texture;
+	GLuint	textures[2];
 	MyWindow(const char* title);
 
 	void displayFunc();
@@ -22,6 +24,7 @@ public:
 	void drawAxis();
 	void drawCurs();
 	void initGL();
+	void drawBackground();
 	void reshapeFunc(int W, int H);
 	void mouseFunc(int button,int state,int x,int y);
 };
